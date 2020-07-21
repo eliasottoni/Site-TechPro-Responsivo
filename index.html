@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Definir que o site ira se adaptar a tela-->
+    <meta name="keyworks" content="Agencia, Marketing, Sites">         <!--Essas são as tags para os buscadores-->
+    <meta name="robots" content="index, follow">                 <!--Essa é a tag de o que vai aparecer no buscador-->
+    <meta name="author" content="Elias Ottoni">                                     <!--Autor-->
+    <link rel="stylesheet" href="css/style.css">                     <!--Incorporar o arquivo CSS no codigo-->
+    <script src="https://kit.fontawesome.com/332c26d098.js" crossorigin="anonymous"></script> <!--Icones-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/icon.png"> <!--Icon da pagina-->
+    <title>TechPro - Especialização em serviçoes digitais</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="index.html"><h1 class="logo">TechPro - Especialização em serviçoes digitais</h1></a>
+        <button class="btn-menu"><i class="fas fa-bars fa-lg"></i></button>
+        <nav class="menu"> <!--Navbar-->
+            <a class="btn-close"> <i class="fa fa-times"></i> </a>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Clientes</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+   <!--Banner-->
+    <div class="banner">
+        <div class="tittle">
+            <h2>OUSE INOVAR!</h2>
+            <h3>Criamos experiências e estabelecemos ações estratégicas que conectam marcas e consumidores.</h3>
+        </div>
+        <div class="buttons">
+            <button class="btn-cads btn"> Cadastrar <i class="fa fa-arrow-circle-right"></i> </button>
+            <button class="btn-sbr btn"> Sobre <i class="fa fa-question-circle"></i> </button>
+        </div>
+    </div>
+   
+    <!--Serviços-->
+    <main class="servicos">
+        <article class="servico">
+            <a href=""><img src="img/criacoes.jpg" alt="Criações Publicitarias">
+            <div class="inner">
+                <a href="#">Criações Publicitarias</a>
+                <h4>Impressos, VTs e Jingles</h4>
+                <p>Reference site about Lorem Ipsum, giving information on its origins, <br> 
+                    as well as a ... Vestibulum ligula metus, porttitor ac posuere non, <br>
+                    cursus sit amet dolor. Donec interdum, arcu vel rutrum vestibulum, dui <br>
+                    tortor auctor massa, a laoreet ... Cras fringilla, augue id tempus rhoncus, <br>
+                </p>
+            </div>
+            </a>
+        </article>
+        <article class="servico">
+            <a href=""><img src="img/md.jpg" alt="Marketing Digital">
+            <div class="inner">
+                <a href="#">Marketing Digital</a>
+                <h4>Adminstração de Redes Sociais</h4>
+                <p>Site about Lorem Ipsum, giving information on its origins, <br> 
+                    as well as a ... Vestibulum ligula metus, porttitor ac posuere non, <br>
+                    cursus sit amet dolor. Donec interdum, arcu vel rutrum vestibulum, dui <br>
+                    tortor auctor massa, a laoreet ... Cras fringilla, augue id tempus rhoncus, <br>
+                </p>
+            </div>
+            </a>
+        </article>
+    </main>
+
+    <!--Newsletter-->
+    <section class="newsletter">
+        <h2>Inscreva-se agora!</h2>
+        <h3>Receba Novidades, dicas e muito mais</h3>
+        <form action="">
+            <input type="email" name="email" placeholder="Seu email">
+            <button>Cadastrar</button>
+        </form>
+    </section>
+
+    <!--Rodapé-->
+    <footer class="rodape">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+            <a href="eliasdasilvaottoni@gmail.com" type="email" to><i class="fa fa-envelope"></i></a>
+        </div>
+        <p class="copyright">
+            Copyright © TechPro 2019. Todos os direitos reservados.
+        </p>
+    </footer>
+
+    <!--Biblioteca Jquery-->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js" integrity="sha256-Xxq2X+KtazgaGuA2cWR1v3jJsuMJUozyIXDB3e793L8=" crossorigin="anonymous"></script>
+    
+    <script>
+        $(".btn-menu").click(function(){
+            $(".menu").show();
+        });
+        $(".btn-close").click(function(){
+            $(".menu").hide();
+        });
+    </script>
+</body>
+</html>
